@@ -85,8 +85,8 @@ Below is the recorded video link of deployed application and how to use it:
 https://watch.screencastify.com/v/nmsC1515pjTbb0Xd0Q93
 
 ## Screenshots of the code
-![script](./assets/images/script.png)
-![script](./assets/images/script.png)
-![script](./assets/images/script.png)
-![application](./assets/images/application.png)
-![heroku](./assets/images/heroku.png)
+![script](./Assets/images/script.png)
+![script](./Assets/images/script.png)
+![script](./Assets/images/script.png)
+![application](./Assets/images/application.png)
+![heroku](./Assets/images/heroku.png)
