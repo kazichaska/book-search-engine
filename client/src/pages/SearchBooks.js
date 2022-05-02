@@ -74,13 +74,13 @@ const SearchBooks = () => {
       // search book API and mutation
       await saveBook({
         variables: { book: { ...bookToSave } },
-        // modify: cache => {
-        //   const { me } = cache.readQuery({ query: GET_ME });
-        //   cache.writeQuery({
-        //     query: GET_ME,
-        //     data: { me: { ...me, saveBooks: [...me.savedBooks, bookToSave] } }
-        //   });
-        // }
+        modify: cache => {
+          const { me } = cache.readQuery({ query: GET_ME });
+          cache.writeQuery({
+            query: GET_ME,
+            data: { me: { ...me, saveBooks: [...me.savedBooks, bookToSave] } }
+          });
+        }
       });
 
       // if book successfully saves to user's account, save book id to state
